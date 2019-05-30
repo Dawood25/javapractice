@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+	<head>
+		<title>Angular js Demo</title>
+		<script>
+		console.log("hello one");
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="app.js"></script>
+		<style>
+		header{
+			margin:5px 0px;
+			text-align:center;
+			background-color:gray;
+			}
+		</style>
+	</head>
+	<body >
+		<header>
+			<h1>{{title}}</h1>
+		</header>
+		<div class="form" ng-controller="first">
+		
+			<form action="submit" method="post" name="first">
+				<input type="text" name="name"  ng-model="name"/>
+				{{name}}
+			</form>
+		</div>
+	</body>
+</html>
